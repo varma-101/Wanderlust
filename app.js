@@ -98,7 +98,7 @@ app.get("/", (req, res) => {
     res.redirect("/listings");
 });
 
-app.use("/", userRouter);
+app.use("/", userRouter)
 
 
 app.all("*", (req, res, next) => {
